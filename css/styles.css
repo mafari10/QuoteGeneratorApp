@@ -1,0 +1,125 @@
+/*All imports */
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Anta";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("data:image/svg+xml,%3Csvg width='84' height='84' viewBox='0 0 84 84' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M84 23c-4.417 0-8-3.584-8-7.998V8h-7.002C64.58 8 61 4.42 61 0H23c0 4.417-3.584 8-7.998 8H8v7.002C8 19.42 4.42 23 0 23v38c4.417 0 8 3.584 8 7.998V76h7.002C19.42 76 23 79.58 23 84h38c0-4.417 3.584-8 7.998-8H76v-7.002C76 64.58 79.58 61 84 61V23zM59.05 83H43V66.95c5.054-.5 9-4.764 9-9.948V52h5.002c5.18 0 9.446-3.947 9.95-9H83v16.05c-5.054.5-9 4.764-9 9.948V74h-5.002c-5.18 0-9.446 3.947-9.95 9zm-34.1 0H41V66.95c-5.053-.502-9-4.768-9-9.948V52h-5.002c-5.184 0-9.447-3.946-9.95-9H1v16.05c5.053.502 9 4.768 9 9.948V74h5.002c5.184 0 9.447 3.946 9.95 9zm0-82H41v16.05c-5.054.5-9 4.764-9 9.948V32h-5.002c-5.18 0-9.446 3.947-9.95 9H1V24.95c5.054-.5 9-4.764 9-9.948V10h5.002c5.18 0 9.446-3.947 9.95-9zm34.1 0H43v16.05c5.053.502 9 4.768 9 9.948V32h5.002c5.184 0 9.447 3.946 9.95 9H83V24.95c-5.053-.502-9-4.768-9-9.948V10h-5.002c-5.184 0-9.447-3.946-9.95-9zM50 50v7.002C50 61.42 46.42 65 42 65c-4.417 0-8-3.584-8-7.998V50h-7.002C22.58 50 19 46.42 19 42c0-4.417 3.584-8 7.998-8H34v-7.002C34 22.58 37.58 19 42 19c4.417 0 8 3.584 8 7.998V34h7.002C61.42 34 65 37.58 65 42c0 4.417-3.584 8-7.998 8H50z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.quote-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 500px;
+  width: auto;
+  margin: 0px 10px;
+  padding: 0px 5px;
+
+  border-radius: 20px;
+  box-shadow: 10px 10px 29px 18px rgba(209, 240, 8, 0.52);
+}
+#quote {
+  font-size: 1.5rem;
+}
+.quote {
+  font-size: 1.2rem !important;
+}
+.quotes_buttons {
+  margin: 20px 0px;
+}
+.quote_text_container {
+  text-align: center;
+}
+.fa-quote-right {
+  color: #1b1919;
+  font-size: 3rem;
+}
+.fa-quote-left {
+  color: #1b1919;
+  font-size: 3rem;
+}
+.author p {
+  font-size: 1rem;
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  margin: 10px 0px;
+}
+
+.quotes_buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.tweets {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: rgb(33, 128, 207);
+  cursor: pointer;
+  transition: all 0.9s ease;
+}
+.tweets:hover {
+  filter: grayscale(50%);
+}
+
+.fa-twitter {
+  font-size: 2rem;
+  color: white;
+}
+.linkedin {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: rgba(207, 33, 33, 0.829);
+  cursor: pointer;
+  transition: all 0.9s ease;
+}
+.fa-linkedin {
+  font-size: 2rem;
+  color: white;
+}
+.linkedin:hover {
+  background: rgb(179, 98, 98);
+}
+.next {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: rgb(106, 95, 95);
+  color: wheat;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.9s ease;
+}
+.next:hover {
+  background: gray;
+}
+.long_text {
+  font-size: 1.3rem;
+}
+
+/* Add Sipnner */
+.spin {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: hsla(160, 100%, 37%, 1);
+  animation: load 1s ease infinite;
+}
+@keyframes load {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
